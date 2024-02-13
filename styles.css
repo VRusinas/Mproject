@@ -1,0 +1,136 @@
+body {
+   width: 100%;
+  height: 90vh;
+  background: url(/bg/bg.gif);
+  background-size: 150% 150%;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: rgba(255, 255, 255, 0.89); /* Pastel pink color */
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 30px; /* Adjust font size */
+  letter-spacing: 4px; /* Add letter spacing for retro feel */
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5); /* Add text shadow for depth */
+}
+
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.textContainer {
+  display: flex;
+  width: 70%;
+  height: 8vh;
+  text-align: center;
+  padding-top: 25px;
+  color: rgb(255, 214, 30);
+}
+
+.image {
+  margin-bottom: 20px;
+  text-align: center; /* Center the images */
+}
+
+.image {
+  padding-top: 20px;
+  margin-bottom: 20px;
+  text-align: center; /* Center the images */
+}
+
+
+.image img {
+  max-width: 100%;
+  max-height: 450px;
+  height: auto;
+  display: inline-block; /* Set images to display as inline-block */
+  margin: 0 auto; /* Center the images horizontally */
+  animation: moveRotate 0.5s ease-in-out infinite alternate; /* Apply image animation */
+  animation-delay: 0s; /* Set animation delay to 0 seconds */
+}
+
+
+@keyframes moveRotate {
+  0% {
+    transform: translateX(0px) rotate(-3deg); /* Move left and rotate slightly */
+    box-shadow: 0 0 10px 5px #d510d5 /* Initial glow effect */
+  }
+  100% {
+    transform: translateX(0px) rotate(6deg); /* Move right and rotate slightly */
+    box-shadow: 0 0 10px 10px #ff34ff; /* Return to initial glow effect */
+  }
+}
+
+.caption {
+  font-size: 28px;
+  margin-top: 40px;
+}
+
+.btn {
+  background-color: #800080;
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 200;
+  font-style: normal;
+  color: rgba(255, 255, 255, 0.89); /* Pastel pink color */
+  padding: 16px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+}
+.btn:hover{
+  background-color: #d510d5;
+} 
+
+.start-btn {
+  background-color: #800080;
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 200;
+  font-style: normal;
+  color: rgba(255, 255, 255, 0.89); /* Pastel pink color */
+  padding: 16px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  animation: moveRightAndBack 2s ease-in-out infinite alternate; /* Apply the animation */
+}
+#loveHeading {
+  display: none; /* Initially hide the heading */
+}
+
+
+
+@keyframes moveRightAndBack {
+  0% {
+    transform: translate(0, 0); 
+  }
+  50% {
+    transform: translate(600px, 600px); 
+  }
+   100% {
+    transform: translate(1200px, 0px); 
+  }
+}
+
+
+@media (max-width: 600px) {
+  .container {
+    padding: 0 10px;
+  }
+}
+
+@media (max-width: 400px) {
+  .caption {
+    font-size: 14px;
+  }
+}

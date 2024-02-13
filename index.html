@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ponas Valentinas</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Button to start music and open gallery -->
+    <button id="startBtn" class="start-btn" onclick="startMusicAndOpenGallery()">PASPAUSK ANT MANES</button>
+
+    <!-- Container for the image gallery -->
+    <div id="imageGallery" class="container" style="display: none;">
+      <h3 id="loveHeading">Mūsų meilė yra:</h3>
+        <div class="image">
+            <img id="galleryImage" src="images/0.gif" alt="Image 1">
+            <h3 id="caption" class="caption">Su Valentino diena, <br><br>
+              Nuo praeito Valentino praėjo nemažai laiko, 
+              manau verta įsivertinti kokia ta mūsų meilė šiomis dienomis...<br><br>
+              Tam ir skirtas šitas websaitas </h3>
+        </div>
+        <button class="btn" onclick="nextImage()">Tikrinam</button>
+    </div>
+
+    <!-- Container for the text after the last photo -->
+    <div id="textContainer" class="textContainer" style="display: none;">
+        <h3>Su Valentino diena...</h3>
+        <p>Juokas juokais, bet labai tave myliu ir džiaugiuos, kad mes kartu ❤️❤️❤️</p>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
